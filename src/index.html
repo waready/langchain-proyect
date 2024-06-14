@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conectar a Endpoint</title>
+    <style>
+        #response {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+
+        .message {
+            margin-bottom: 10px;
+            padding: 5px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+        }
+
+        .human-message {
+            color: blue;
+        }
+
+        .ai-message {
+            color: green;
+        }
+
+        #loader {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.7);
+            z-index: 1000;
+            text-align: center;
+            padding-top: 200px;
+        }
+
+        .loader-text {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div id="loader">
+        <div class="loader-text">Cargando...</div>
+    </div>
+    
+    <h1>Conectar a Endpoint</h1>
+    <input type="text" id="inputMessage" placeholder="Escribe tu mensaje...">
+    <button id="sendRequest">Enviar Petición</button>
+    <pre id="response"></pre>
+
+    <script src="bundle.js"></script>
+</body>
+</html>
